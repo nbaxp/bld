@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blu.Net4", "Blu.Net4\Blu.Net4.csproj", "{69558F99-322B-4148-B9E1-F82047CE5062}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{895EEA90-B29D-44FD-ACE2-02DD1B9817E9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blu.Shared", "Blu.Shared\Blu.Shared.csproj", "{225234B5-1972-4329-9FFF-FAF4DC8B453E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69558F99-322B-4148-B9E1-F82047CE5062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69558F99-322B-4148-B9E1-F82047CE5062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69558F99-322B-4148-B9E1-F82047CE5062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69558F99-322B-4148-B9E1-F82047CE5062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225234B5-1972-4329-9FFF-FAF4DC8B453E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225234B5-1972-4329-9FFF-FAF4DC8B453E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225234B5-1972-4329-9FFF-FAF4DC8B453E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225234B5-1972-4329-9FFF-FAF4DC8B453E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5EBAE39-49CE-414C-B5A5-30A21A6E63F9}
+	EndGlobalSection
+EndGlobal
