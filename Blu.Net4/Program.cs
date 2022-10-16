@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using Blu.Net4.Data;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Text;
@@ -16,6 +16,11 @@ namespace Blu.Net4
         [STAThread]
         private static void Main()
         {
+            using (var db = new SqliteDbContext())
+            {
+                db.Settings.Add(new Data.Entities.Setting());
+                db.SaveChanges();
+            }
             PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(Path.Combine(Directory.GetCurrentDirectory(), "MSYH.TTC"));
             Font = new Font(pfc.Families[0], 12);
@@ -40,12 +45,12 @@ namespace Blu.Net4
             {
                 manager.ApplyResources(item, item.Name);
                 SetLanguage(manager, item.Controls);
-                if(item is MenuStrip menuStrip)
+                if (item is MenuStrip menuStrip)
                 {
                     foreach (ToolStripItem menuItem in menuStrip.Items)
                     {
                         manager.ApplyResources(menuItem, menuItem.Name);
-                        if(menuItem is ToolStripDropDownItem dropDownMenuItem)
+                        if (menuItem is ToolStripDropDownItem dropDownMenuItem)
                         {
                             foreach (ToolStripItem dropDownItem in dropDownMenuItem.DropDownItems)
                             {
@@ -54,7 +59,7 @@ namespace Blu.Net4
                         }
                     }
                 }
-                else if(item is StatusStrip statusStrip)
+                else if (item is StatusStrip statusStrip)
                 {
                     foreach (ToolStripItem menuItem in statusStrip.Items)
                     {
